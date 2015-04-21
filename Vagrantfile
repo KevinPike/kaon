@@ -6,7 +6,7 @@ apt-get update && apt-get install -y golang redis-server git
 export GOPATH=/vagrant
 cd /vagrant
 go get github.com/fzzy/radix/redis
-go run /vagrant/src/kaon.go &
+go run /vagrant/kaon.go &
 echo $! > /var/run/kaon.pid
 SCRIPT
 
